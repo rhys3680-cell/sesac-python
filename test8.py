@@ -38,3 +38,8 @@ for word in MY_SONG.split():
         cnt += 1
 
 print(cnt)
+
+
+cnt2 = MY_SONG.count("그대")
+
+print(cnt2)

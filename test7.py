@@ -29,21 +29,21 @@ a = ("은") in members[0]
 
 # print(a)
 
-# for m in members:
-#     if m[0] == "김":
-#         print(m)
+for m in members:
+    if m[0] == "김":
+        print(m)
 
-# for m in members:
-#     print(("은") in m)
+for m in members:
+    print(("은") in m)
 
-# for i in range(len(members)):
-#     for j in range(len(members[i])):
-#         if members[i][j] == "은":
-#             print(members[i])
+for i in range(len(members)):
+    for j in range(len(members[i])):
+        if members[i][j] == "은":
+            print(members[i])
 
-# for m in members:
-#     if m[0] in "남궁":
-#         print(m)
+for m in members:
+    if m[0] in "남궁":
+        print(m)
 
 
 for m, c in zip(members, check, strict=True):
