@@ -84,7 +84,7 @@ def solution(msg):
     for word in words:
         ranking[word] = msg.count(word)
 
-    return sorted(ranking.items(), key=lambda kv: -kv[1])[:10]
+    return [k for k, _ in sorted(ranking.items(), key=lambda kv: -kv[1])[:10]]
 
 
 print(solution(msg))
