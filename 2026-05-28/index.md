@@ -47,12 +47,12 @@
     # ['will','that','have','freedom','from','Negro','with','this','come','every']
     
     def solution(msg):
-        words = set([word for word in msg.split() if len(word) > 4])
-        ranking = {}
-        for word in words:
-            ranking[word] = msg.count(word)
-    
-        return sorted(ranking.items(), key=lambda kv: -kv[1])[:10]
+    words = set([word for word in msg.split() if len(word) > 4])
+    ranking = {}
+    for word in words:
+        ranking[word] = msg.count(word)
+
+    return [k for k, _ in sorted(ranking.items(), key=lambda kv: -kv[1])[:10]]
     ```
 
 
